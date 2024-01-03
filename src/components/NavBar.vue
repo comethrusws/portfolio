@@ -1,10 +1,10 @@
 <template>
   <div class="navbar">
-    <div class="about">About</div>
-    <div class="services">Services</div>
-    <div class="projects">Projects</div>
+    <div class="about" href="#">About</div>
+    <div class="services" href="#">Services</div>
+    <div class="projects" href="#">Projects</div>
+    <div class="button-open-links-navigate">Let's Talk</div>
     <img class="logo-tranwht-1-icon" alt="" src="../assets/logos/logo-tranWht.png" />
-    <div class="button-open-links-navigate" />
   </div>
 </template>
 <script>
@@ -16,6 +16,7 @@
 </script>
 <style scoped>
   .about {
+    cursor: pointer;
     position: absolute;
     top: 22px;
     left: 535px;
@@ -26,6 +27,7 @@
     height: 1px;
   }
   .services {
+    cursor: pointer;
     position: absolute;
     top: 22px;
     left: 656px;
@@ -36,6 +38,7 @@
     height: 1px;
   }
   .projects {
+    cursor: pointer;
     position: absolute;
     top: 22px;
     left: 805px;
@@ -54,9 +57,20 @@
     object-fit: cover;
   }
   .button-open-links-navigate {
-    position: relative;
-    width: 171px;
-    height: 55px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 954px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+
   }
   .navbar {
     position: relative;
