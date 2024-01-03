@@ -25,7 +25,7 @@ export default defineComponent({
       duration: 1,
       x: -100, // Slide from left to right
       opacity: 0,
-      delay:0.5, 
+      delay:0.8, 
       ease: "power2.out", 
     });
 
@@ -34,7 +34,7 @@ export default defineComponent({
       x: 100, // Slide from right to left
       opacity: 0, 
       ease: "power2.out", 
-      delay: 0.5, 
+      delay: 0.8, 
     });
 
     gsap.from(".hey-im-basab2", {
@@ -42,12 +42,12 @@ export default defineComponent({
       y: -50, // Slide from top to bottom
       opacity: 0, 
       ease: "power2.out", 
-      delay: 0.5, 
+      delay: 0.8, 
     });
 
-    gsap.from(".texture-1-icon", { duration: 1, scale: 0, opacity: 0, ease: "power2.out", delay:0.5 });
-    gsap.from(".green-and-purple-upscaled-1-icon", { duration: 1, y: -100, opacity: 0, ease: "power2.out", delay: 0.5 });
-    gsap.from(".texture-2-icon", { duration: 1, x:-100, opacity: 0, ease: "power2.out", delay: 0.5 });
+    gsap.from(".texture-1-icon", { duration: 1, scale: 0, opacity: 0, ease: "power2.out", delay:0.8 });
+    gsap.from(".green-and-purple-upscaled-1-icon", { duration: 1, y: -100, opacity: 0, ease: "power2.out", delay: 0.8 });
+    gsap.from(".texture-2-icon", { duration: 1, x:-100, opacity: 0, ease: "power2.out", delay: 0.8 });
     }
 });
 </script>
