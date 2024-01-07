@@ -44,6 +44,18 @@ export default defineComponent({
       ease: "power2.out", 
       delay: 0.8, 
     });
+    gsap.from(".scroll", {
+      duration: 1,
+      y: -50, // Slide from top to bottom
+      opacity: 0, 
+      ease: "power2.out", 
+      delay: 0.2, 
+      scrollTrigger: {
+                trigger: ".scroll",
+                start: "top 80%",
+                end: "bottom 60%",
+            },
+    });
 
     gsap.from(".texture-1-icon", { duration: 1, scale: 0, opacity: 0, ease: "power2.out", delay:0.8 });
     gsap.from(".green-and-purple-upscaled-1-icon", { duration: 1, y: -100, opacity: 0, ease: "power2.out", delay: 0.8 });
@@ -138,7 +150,7 @@ body {
 .scroll {
     position: absolute;
     top: 629px;
-    left: 1422px;
+    left: 1360px;
     font-size: 20px;
     letter-spacing: 0.3em;
     font-weight: 300;

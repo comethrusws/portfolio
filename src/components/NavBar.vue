@@ -1,10 +1,13 @@
 <template>
   <div class="navbar">
-    <div class="about" href="#">About</div>
+    <div class="nav-links">
+      <div class="about" href="#">About</div>
     <div class="services" href="#">Services</div>
     <div class="projects" href="#">Projects</div>
     <div class="button-open-links-navigate">Let's Talk</div>
     <img class="logo-tranwht-1-icon" alt="" src="../assets/logos/logo-tranWht.png" />
+
+    </div>
   </div>
 </template>
 <script>
@@ -82,5 +85,23 @@
     font-size: 24px;
     color: #fff;
     font-family: Inter;
+  }
+  
+  .nav-link {
+    cursor: pointer;
+    display: none; /* Hide links by default for smaller screens */
+  }
+
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; /* Add padding to create space between links */
+  }
+  @media screen and (min-width: 600px) {
+    .nav-link {
+      display: block; /* Show links for screens larger than 600px */
+    }
   }
 </style>
